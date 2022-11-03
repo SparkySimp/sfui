@@ -10,4 +10,5 @@ set (CU_SFML_PATH "C:\\Users\\Administrator\\Documents\\SFML\\SFML-2.5.1") # Mod
 add_executable (sfui "sfui.cpp" "sfui.h")
 
 # Add SFML 2.5.1
-add_library(CU_SFML_PATH)
+set (CU_SFML_LIB)
+string(CONCAT CU_SFML_LIB CU_SFML_PATH "\\bin")
